@@ -25,9 +25,9 @@ class Master(Endpoint):
         text_layer = Image.new('RGBA', base.size)
         tilted_text = ImageDraw.Draw(text_layer)
 
-        canv.text((457, 513), text1, font=font, fill='White')
+        canv.text((148, 151), text1, font=font, fill='White')
         tilted_text.text((350, 330), text2, font=font, fill='White')
-        canv.text((148, 151), text3, font=font, fill='White')
+        canv.text((457, 513), text3, font=font, fill='White')
 
         text_layer = text_layer.rotate(8, resample=Image.BICUBIC)
 
