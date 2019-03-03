@@ -17,7 +17,7 @@ class Master(Endpoint):
         if len(text) == 3:
             a, b, c = text
         else:
-            a, b, c = ('you need 3 items', 'for this command', 'split by commas')
+            a, b, c = ('split by commas', 'for this command', 'you need 3 items')
         font, text1 = auto_text_size(a, self.assets.get_font('assets/fonts/sans.ttf'), 250, font_scalar=0.2)
         font, text2 = auto_text_size(b, font, 250, font_scalar=0.3)
         font, text3 = auto_text_size(c, font, 300, font_scalar=0.2)
